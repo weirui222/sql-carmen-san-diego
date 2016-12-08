@@ -20,6 +20,39 @@ We're going to use what we've learned already about searching with SQL commands,
 psql -f starter-code/world.sql
 ```
 
+Start psql and connect to the new database called world:
+
+```
+psql -d world
+```
+
+Use the `\d` command to see what tables are available. You should see:
+
+```
+world=# \d
+              List of relations
+ Schema |      Name       | Type  |   Owner   
+--------+-----------------+-------+-----------
+ public | city            | table | moonmayor
+ public | country         | table | moonmayor
+ public | countrylanguage | table | moonmayor
+```
+
+You can write queries while you're in the `psql` command line interface. It's hard
+to edit these commands in place. You can press CTRL+D to exit psql. CTRL+D only works
+when you're on an empty line. If you're in the middle of entering text then press enter
+to submit the current query (even if it has syntax errors) then press CTRL+D on an
+empty line to quit.
+
+Write your SQL commands into different .sql files and execute them using
+
+```
+psql -f query1.sql
+psql -f query2.sql
+psql -f query3.sql
+... and so forth
+```
+
 Then, use the clues below to create the appropriate SQL queries to help you find Carmen and then, tell us where she's heading!!
 
 ### The Clues
