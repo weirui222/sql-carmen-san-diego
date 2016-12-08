@@ -17,7 +17,7 @@ We're going to use what we've learned already about searching with SQL commands,
 - From the command line, let's create a new database called `carmen` and populate it with the SQL found in `world.sql`
 
 ```sql
-psql -d world -f starter-code/world.sql
+psql -f starter-code/world.sql
 ```
 
 Then, use the clues below to create the appropriate SQL queries to help you find Carmen and then, tell us where she's heading!!
